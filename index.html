@@ -68,6 +68,25 @@
             </ul>
         </div>
         
+        
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
         <script>
             function myFunction() {
               // Declare variables
@@ -94,6 +113,11 @@
             var app_api_token = '63a33b5752c4dca87f1d6de2ca3b44230b65ec45';
             var app_advert = 2;
             var app_exclude_domains = ["youtube.com"];
+        </script>
+        <script>
+              $(window).load(function(){        
+               $('#myModal').modal('show');
+                }); 
         </script>
         <script src='//shrinkearn.com/js/full-page-script.js'></script>
     </body>
